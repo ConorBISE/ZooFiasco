@@ -1,3 +1,5 @@
+package animals;
+
 public class Monkey extends Animal {
 
     public Monkey(String name, String[] favoriteFoods) {

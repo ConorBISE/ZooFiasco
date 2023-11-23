@@ -1,4 +1,8 @@
+package employees;
 // Zookeeper.java
+
+import animals.Animal;
+
 public abstract class Zookeeper {
     private String name;
 

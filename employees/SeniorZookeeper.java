@@ -1,3 +1,7 @@
+package employees;
+
+import animals.Animal;
+
 public class SeniorZookeeper extends Zookeeper {
     public SeniorZookeeper(String name) {
         super(name);
