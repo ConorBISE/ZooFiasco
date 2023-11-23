@@ -4,6 +4,6 @@ public class SeniorZookeeper extends Zookeeper {
     }
 
     public void giveMedicine(Animal animal) {
-        System.out.println(getName() + " is giving medicine to " + animal.type);
+        System.out.println(getName() + " is giving medicine to " + animal.getType());
     }
 }
