@@ -36,4 +36,8 @@ public abstract class Animal {
     public String getType() {
         return type;
     }
+
+    public String[] getFavoriteFoods() {
+        return favoriteFoods;
+    }
 }

@@ -2,6 +2,10 @@
 import java.util.ArrayList;
 import java.util.List;
 
+import animals.Animal;
+import employees.Zookeeper;
+import employees.ZooManager;
+
 public class Zoo {
     private List<Animal> animals;
     private List<Zookeeper> zookeepers;
@@ -38,10 +42,11 @@ public class Zoo {
 
     public void printFavoriteFoods() {
         for (Animal animal : animals) {
-            if (animal.favoriteFoods.length > 0) {
-                System.out.println(animal.name + "'s favorite food: " + animal.favoriteFoods[0]);
+            String[] favouriteFoods = animal.getFavoriteFoods();
+            if (favouriteFoods.length > 0) {
+                System.out.println(animal.getName() + "'s favorite food: " + favouriteFoods[0]);
             } else {
-                System.out.println(animal.name + " has no favorite food");
+                System.out.println(animal.getName() + " has no favorite food");
             }
         }
     }
