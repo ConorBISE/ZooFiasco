@@ -1,5 +1,5 @@
 // Zookeeper.java
-public class Zookeeper {
+public abstract class Zookeeper {
     private String name;
 
     public Zookeeper(String name) {
@@ -12,5 +12,9 @@ public class Zookeeper {
 
     public void cleanCage(Animal animal) {
         System.out.println(name + " is cleaning " + animal.type + "'s cage");
+    }
+
+    public String getName() {
+        return name;
     }
 }
